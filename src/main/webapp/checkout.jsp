@@ -121,7 +121,7 @@
                                         <div id="customer_details" class="col2-set">
                                             <div class="col-1">
                                                 <div class="woocommerce-billing-fields">
-                                                    <h3>Chi tiết hóa đơn</h3>
+                                                    <h3>Điền thông tin</h3>
                                                     <p id="billing_country_field" class="form-row form-row-wide address-field update_totals_on_change validate-required woocommerce-validated">
 <!--                                                        <label class="" for="billing_country">Country <abbr title="required" class="required">*</abbr>
                                                         </label>
