@@ -51,14 +51,14 @@
         
             <div class="product-bit-title text-center">
                 <div role="tabpanel" class="tab-pane fade in active" id="home">
-                    <h3>Hóa đơn</h3>  
-                    <p>Họ và Tên: <br>
+<!--                    <h3>Hóa đơn</h3>  
+                    <p>Họ và Tên: ${txtName} <br>
                        Địa chỉ: <br>
                        Email: <br>
                        SĐT: <br>
                        Sản Phẩm: <br>
                        Tổng tiền: <br>
-                    </p>
+                    </p>-->
                 </div>
             </div>
             

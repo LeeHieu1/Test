@@ -116,7 +116,7 @@
                                         <div class="clear"></div>
                                     </form>-->
 
-                                    <form enctype="multipart/form-data" action="#" class="checkout" method="post" name="checkout">
+                                    <form enctype="multipart/form-data" action="InsertServlet" class="checkout" method="post" name="checkout">
 
                                         <div id="customer_details" class="col2-set">
                                             <div class="col-1">
@@ -377,7 +377,7 @@
                                                     <p id="billing_first_name_field" class="form-row form-row-first validate-required">
                                                         <label class="" for="billing_first_name">Họ và Tên <abbr title="required" class="required">*</abbr>
                                                         </label>
-                                                        <input type="text" value="" placeholder="" id="billing_first_name" name="billing_first_name" class="input-text ">
+                                                        <input type="text" value="" placeholder="" id="billing_first_name" name="txtName" class="input-text ">
                                                     </p>
 
 <!--                                                    <p id="billing_last_name_field" class="form-row form-row-last validate-required">
@@ -395,7 +395,7 @@
                                                     <p id="billing_address_1_field" class="form-row form-row-wide address-field validate-required">
                                                         <label class="" for="billing_address_1">Địa chỉ <abbr title="required" class="required">*</abbr>
                                                         </label>
-                                                        <input type="text" value="" placeholder="" id="billing_address_1" name="billing_address_1" class="input-text ">
+                                                        <input type="text" value="" placeholder="" id="billing_address_1" name="txtDiachi" class="input-text ">
                                                     </p>
 
                                                     
@@ -420,13 +420,13 @@
                                                     <p id="billing_email_field" class="form-row form-row-first validate-required validate-email">
                                                         <label class="" for="billing_email">Email <abbr title="required" class="required">*</abbr>
                                                         </label>
-                                                        <input type="text" value="" placeholder="" id="billing_email" name="billing_email" class="input-text ">
+                                                        <input type="text" value="" placeholder="" id="billing_email" name="txtEmail" class="input-text ">
                                                     </p>
 
                                                     <p id="billing_phone_field" class="form-row form-row-last validate-required validate-phone">
                                                         <label class="" for="billing_phone">SĐT <abbr title="required" class="required">*</abbr>
                                                         </label>
-                                                        <input type="text" value="" placeholder="" id="billing_phone" name="billing_phone" class="input-text ">
+                                                        <input type="text" value="" placeholder="" id="billing_phone" name="txtPhone" class="input-text ">
                                                     </p>
                                                     <div class="clear"></div>
 
@@ -792,7 +792,7 @@
                                                         </td>
                                                         <td class="product-total">
                                                             <span class="amount" >$${sp.total}</span> 
-                                                            <c:set var="total" value="${total + sp.total}" />
+                                                            <c:set var="total" value="${total + sp.total}"/>
                                                         </td>
                                                     </tr>
                                                 </c:forEach>    
@@ -842,8 +842,8 @@
                                                         <div style="display:none;" class="payment_box payment_method_cheque">
                                                             <p>Please send your cheque to Store Name, Store Street, Store Town, Store State / County, Store Postcode.</p>
                                                         </div>
-                                                    </li>-->
-<!--                                                    <li class="payment_method_paypal">
+                                                    </li>
+                                                    <li class="payment_method_paypal">
                                                         <input type="radio" data-order_button_text="Proceed to PayPal" value="paypal" name="payment_method" class="input-radio" id="payment_method_paypal">
                                                         <label for="payment_method_paypal">Thanh toán Online <img alt="PayPal Acceptance Mark" src="https://www.paypalobjects.com/webstatic/mktg/Logo/AM_mc_vs_ms_ae_UK.png"><a title="What is PayPal?" onclick="javascript:window.open('https://www.paypal.com/gb/webapps/mpp/paypal-popup', 'WIPaypal', 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1060, height=700'); return false;" class="about_paypal" href="https://www.paypal.com/gb/webapps/mpp/paypal-popup"></a>
                                                         </label>
@@ -856,7 +856,7 @@
 <!--                                                <div class="form-row place-order">
                                                     <input type="submit" data-value="Place order" value="Place order" id="place_order" name="woocommerce_checkout_place_order" class="button alt">
                                                 </div>-->
-                                                <div class="actions" colspan="6">
+                                                <div class="actions" colspan="6" value="add">
                                                     <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" 
                                                    href="thank.jsp">Đặt hàng</a>
                                                 </div>

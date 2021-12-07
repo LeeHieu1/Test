@@ -74,6 +74,10 @@
         <servlet-name>CheckServlet</servlet-name>
         <servlet-class>controller.CheckServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>InsertServlet</servlet-name>
+        <servlet-class>controller.InsertServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>taikhoan</servlet-name>
         <url-pattern>/taikhoan</url-pattern>
@@ -159,6 +163,10 @@
     <servlet-mapping>
         <servlet-name>CheckServlet</servlet-name>
         <url-pattern>/CheckServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>InsertServlet</servlet-name>
+        <url-pattern>/InsertServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

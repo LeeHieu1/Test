@@ -19,4 +19,17 @@ public class DonhangDAOImpl implements DonhangDAO {
         return dh;
     }
 
+    @Override
+    public List<Donhang> insertDH(String tenKH, String Email, String DiaChi, String SDT) {
+        
+        EntityManager em = DBUtil.getEmFactory().createEntityManager();
+        String qString = "INSERT INTO DonHang(TenKH, Email, DiaChi, SDT) VALUES(?,?,?,?)";
+
+        TypedQuery<Donhang> q = em.createQuery(qString, Donhang.class);
+
+        List<Donhang> dh1 = q.getResultList();
+
+        return dh1;
+    }
+
 }
